@@ -7,9 +7,20 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // GitHub Pages project site: static assets are served below this repository path.
+  vite: {
+    base: "/musfiqur-rahman-portfolio/",
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: { entry: "server" },
+    // Render this portfolio at build time so GitHub Pages can serve static files.
+    prerender: {
+      enabled: true,
+      autoSubfolderIndex: true,
+      autoStaticPathsDiscovery: true,
+      crawlLinks: true,
+      failOnError: true,
+    },
   },
 });
