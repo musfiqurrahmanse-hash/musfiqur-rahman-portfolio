@@ -1,67 +1,100 @@
-# Musfiqur Rahman Portfolio
+# Md. Musfiqur Rahman — Portfolio
 
-Build a polished, responsive personal portfolio website for Md. Musfiqur Rahman, a CSE undergraduate at AIUB. Use the provided reference sites for inspiration, especially https://zahid8910.github.io/ and https://sites.google.com/view/zahid8910/home, but do NOT copy their exact design or content. Create a distinctive modern portfolio with a light, clean editorial style, deep navy/charcoal text, restrained blue/teal accents, generous whitespace, subtle motion, excellent typography, responsive layouts, accessible contrast, and a mobile navigation menu.
+A responsive personal portfolio presenting my background as a Computer Science and Engineering undergraduate, selected projects, technical interests, research work, and education.
 
-Important: this is an extensible first version. The owner will add more projects, research, publications, certificates, and achievements later. Build reusable data-driven sections/cards and obvious, centralized content arrays/placeholders so new items can be added without redesigning the page. Do not fabricate degrees, jobs, awards, publications, metrics, project outcomes, dates, technologies, or contact details. Use clearly marked "Details coming soon" / "Add details later" placeholders where information is not yet verified.
+**Live site:** [musfiqurrahmanse-hash.github.io/musfiqur-rahman-portfolio](https://musfiqurrahmanse-hash.github.io/musfiqur-rahman-portfolio/)
 
-Profile links:
-- GitHub: https://github.com/Musfiq53062
-- LinkedIn: https://www.linkedin.com/in/md-musfiqur-rahman-060623248/
-- ResearchGate: https://www.researchgate.net/profile/Md-Musfiqur-Rahman-12
-- ORCID profile link provided: https://orcid.org/my-orcid (treat as a placeholder link; do not invent an ORCID identifier)
+## Overview
 
-Verified/identified public GitHub repositories to feature as initial project cards:
-1. Regional-Load-Shedding-Severity-Classification-Using-Supply-Side-Constraints-in-Bangladesh — research/ML classification project; link https://github.com/Musfiq53062/Regional-Load-Shedding-Severity-Classification-Using-Supply-Side-Constraints-in-Bangladesh
-2. SmartDoorLockUsingBitwiseAuthentication — digital logic / smart door-lock project; link https://github.com/Musfiq53062/SmartDoorLockUsingBitwiseAuthentication. Its README describes bitwise authentication with a 5-bit PIN, a limited attempt mechanism, motion detection, comparators, flip-flops, and logic gates.
-3. Pharmacy_Management_System_CSharp — C# pharmacy management project; link https://github.com/Musfiq53062/Pharmacy_Management_System_CSharp
-4. WTechSpring_25-26 — web technology coursework; link https://github.com/Musfiq53062/WTechSpring_25-26
-5. dotnet_lab — .NET coursework/labs; link https://github.com/Musfiq53062/dotnet_lab
-6. DATA-COM-LAB-REPORTS — data communication lab reports; link https://github.com/Musfiq53062/DATA-COM-LAB-REPORTS
-7. Fun — empty repository; do not present as a completed project; optionally omit or put in a private hidden/uncurated list.
-Some repository README files were unavailable, so descriptions beyond the confirmed names must remain conservative and editable. Do not imply that every repository is a polished standalone project.
+This project is a single-page portfolio designed to make profile information and project work easy to explore. Content is maintained in reusable data structures so that projects, skills, research entries, and other sections can be updated without rebuilding the page layout.
 
-Structure:
-- Sticky responsive header with initials/wordmark "MR", nav links Home, About, Skills, Projects, Research, Education, Contact.
-- Hero with name "Md. Musfiqur Rahman", concise editable tagline such as "CSE Student | Machine Learning & Software Development", a short authentic intro without unsupported claims, CTA buttons "Explore Projects" and "Contact Me", and social/profile links.
-- About section: editable short biography; do not invent detailed personal background.
-- Areas of interest: Machine Learning, Explainable AI, Software Development, Data Analysis, and Research, clearly editable.
-- Skills section grouped by programming languages, frameworks/tools, databases, and ML/data tools. Only include technologies the owner has confirmed; for unconfirmed items, use clearly editable placeholder arrays and avoid rating/proficiency bars.
-- Featured Projects with reusable cards, category filters (All / Machine Learning & Research / Software Development / Coursework), GitHub links, short descriptions, tech-stack tags only where confirmed, and an optional "View repository" link. Include a "More projects will be added" card or subtle empty-state CTA.
-- Research & Publications section with separate reusable cards for publications, ongoing research, datasets, and conference presentations. Seed it with an editable draft entry for research on regional Bangladesh load-shedding severity classification and supply-side constraints, linking to the GitHub repository. Do not call it published or claim a venue. Add visible "Add research item" placeholder card and fields for title, status (Ongoing / Preprint / Published), year, abstract, DOI/paper link, dataset, code link. Don't invent current publication status.
-- Datasets section with a future-ready card for the extended Bangladesh electricity dataset (2019–2026), linking to https://data.mendeley.com/datasets/yp5y4thtfm/1. Explain cautiously that it combines an attributed historical portion with a later extension sourced from BPDB, and let the owner edit the description. Add DOI / download links only if verified.
-- Education section with an editable AIUB CSE entry; avoid inventing dates, GPA, or expected graduation.
-- Certifications & Achievements section: placeholder cards, clearly indicating content can be added later. Do not fabricate entries.
-- Contact section with a contact form UI that gives honest validation/confirmation; if no backend exists, label it as a front-end demo and offer email/social links rather than pretending messages are delivered. Do not invent an email or phone number.
-- Footer with profile links and copyright year generated dynamically.
+## Features
 
-Implementation requirements:
-- Build a working, polished site, not just a static mockup.
-- Use React + TypeScript + Tailwind/shadcn components consistent with this project environment.
-- Responsive and accessible, keyboard-friendly, semantic HTML, reduced-motion support.
-- Add subtle scroll reveal/hover effects without over-animating.
-- Keep project/research/content entries in centralized typed arrays/objects to make future additions straightforward.
-- Use local placeholder visuals or tasteful CSS patterns; don't fabricate personal photos. Provide a clean avatar/monogram fallback.
-- No authentication or database needed for this initial portfolio. Do not publish/deploy automatically; create the project preview so I can review it first.
+- Responsive layout for desktop, tablet, and mobile screens
+- Sections for introduction, about, skills, projects, research, datasets, education, and contact
+- Category filtering for project cards
+- Links to professional and developer profiles
+- Reusable components and centralized portfolio content
+- Keyboard-aware, semantic UI patterns and reduced-motion-conscious interactions
+- Static build configured for GitHub Pages deployment
 
-This project was built with [Lovable](https://lovable.dev).
+## Technology stack
 
-**Live app**: https://musfiqur-rahman-portfolio.lovable.app
+- **React** and **TypeScript**
+- **TanStack Start** and **TanStack Router**
+- **Vite**
+- **Tailwind CSS**
+- **Lucide React** icons
+- **Bun** for dependency installation and scripts
 
-## Build with Lovable
+## Getting started
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d6861af7-3ab5-4d4e-ae39-ef52400c0428).
+### Prerequisites
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- [Bun](https://bun.sh/) installed
+- [Git](https://git-scm.com/) installed
 
-## Development
+### Install and run locally
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+```bash
+git clone https://github.com/musfiqurrahmanse-hash/musfiqur-rahman-portfolio.git
+cd musfiqur-rahman-portfolio
+bun install
+bun run dev
 ```
+
+Open the local URL printed in the terminal.
+
+## Available scripts
+
+| Command | Description |
+| --- | --- |
+| `bun run dev` | Start the local development server |
+| `bun run build` | Build the application |
+| `bun run build:dev` | Build using development mode |
+| `bun run preview` | Preview the production build locally |
+| `bun run lint` | Run ESLint |
+| `bun run format` | Format files with Prettier |
+| `bun run test` | Run the test suite |
+| `bun run test:watch` | Run tests in watch mode |
+
+## Updating portfolio content
+
+Portfolio information is organized in the source content module:
+
+- `src/content/portfolio.ts` — profile details, social links, interests, skills, projects, research, datasets, education, certifications, and achievements.
+
+Update the relevant entries there when adding or editing content. Keep descriptions accurate and only include technologies, dates, credentials, and outcomes that can be verified.
+
+## Deployment
+
+The repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`. When changes are pushed to `main`, the workflow installs dependencies, builds and prerenders the site, then publishes the static output to GitHub Pages.
+
+Check the [Actions tab](https://github.com/musfiqurrahmanse-hash/musfiqur-rahman-portfolio/actions) to review build and deployment status.
+
+The Vite configuration uses the repository path as the public base URL. If the repository is renamed, update the base path in `vite.config.ts` and the deployment configuration as needed.
+
+## Repository structure
+
+```text
+src/
+  components/       Reusable interface components
+  content/          Portfolio content and data
+  routes/           TanStack Router routes
+  styles.css        Global styles
+.github/
+  workflows/
+    deploy.yml      GitHub Pages build and deployment
+```
+
+## Contact and profiles
+
+- [GitHub](https://github.com/Musfiq53062)
+- [LinkedIn](https://www.linkedin.com/in/md-musfiqur-rahman-060623248/)
+- [ResearchGate](https://www.researchgate.net/profile/Md-Musfiqur-Rahman-12)
+
+## Maintenance notes
+
+- Keep portfolio content centralized and consistent with the actual projects.
+- Test locally with `bun run dev` and run `bun run build` before publishing significant changes.
+- Do not commit credentials, API keys, or other secrets to the repository.
