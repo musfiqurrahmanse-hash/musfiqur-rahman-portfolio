@@ -113,14 +113,25 @@ function Index() {
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {shown.map((p) => (
-              <Card key={p.title} className="flex flex-col">
+              <Card key={p.title} className="flex flex-col overflow-hidden">
+                {p.image && (
+                  <img
+                    src={`${import.meta.env.BASE_URL}${p.image}`}
+                    alt={`Screenshot for ${p.title}`}
+                    loading="lazy"
+                    className="mb-4 aspect-video w-full rounded-lg border object-cover"
+                  />
+                )}
                 <div className="flex items-center justify-between gap-2">
                   <Badge tone="teal">{projectCategories.find((c) => c.id === p.category)?.label}</Badge>
                 </div>
                 <h3 className="mt-4 text-xl font-medium leading-snug">{p.title}</h3>
                 <p className="mt-2 flex-1 text-sm text-muted-foreground">{p.description}</p>
                 {p.tags && <div className="mt-4 flex flex-wrap gap-1.5">{p.tags.map((t) => <Tag key={t}>{t}</Tag>)}</div>}
-                {p.repo && <div className="mt-5"><ExtLink href={p.repo}>View repository</ExtLink></div>}
+                <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2">
+                  {p.repo && <ExtLink href={p.repo}>View repository</ExtLink>}
+                  {p.liveDemo && <ExtLink href={p.liveDemo}>Live demo</ExtLink>}
+                </div>
               </Card>
             ))}
             <PlaceholderCard title="More projects will be added">
