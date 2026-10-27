@@ -95,7 +95,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      // Relative URL works both at the GitHub Pages project path and local root.
+      { rel: "icon", href: "./favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
