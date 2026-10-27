@@ -69,7 +69,7 @@ export type Project = {
   note?: string;
 };
 
-export const projects: Project[] = projectData;
+export const projects: Project[] = projectData as Project[];
 
 export type ResearchStatus = "Draft" | "Ongoing" | "Preprint" | "Published";
 export type ResearchKind = "Publication" | "Ongoing Research" | "Conference Presentation";
