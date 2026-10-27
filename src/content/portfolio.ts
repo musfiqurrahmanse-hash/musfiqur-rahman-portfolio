@@ -1,3 +1,4 @@
+import projectData from "./projects.json";
 /**
  * CENTRAL CONTENT FILE — edit this file to update the portfolio.
  * Add new items to any array below; the page renders them automatically.
@@ -61,57 +62,14 @@ export type Project = {
   description: string;
   category: ProjectCategory;
   repo?: string;
+  liveDemo?: string;
+  image?: string; // path relative to the public directory
+  gallery?: string[]; // paths relative to the public directory
   tags?: string[]; // confirmed technologies only
   note?: string;
 };
 
-export const projects: Project[] = [
-  {
-    title: "Regional Load-Shedding Severity Classification",
-    description:
-      "A research-oriented machine learning project classifying regional load-shedding severity in Bangladesh using supply-side constraints.",
-    category: "ml",
-    repo: "https://github.com/Musfiq53062/Regional-Load-Shedding-Severity-Classification-Using-Supply-Side-Constraints-in-Bangladesh",
-    tags: ["Machine Learning", "Classification"],
-  },
-  {
-    title: "Smart Door Lock — Bitwise Authentication",
-    description:
-      "A digital logic design using a 5-bit PIN, a limited-attempt mechanism and motion detection, built from comparators, flip-flops and logic gates.",
-    category: "software",
-    repo: "https://github.com/Musfiq53062/SmartDoorLockUsingBitwiseAuthentication",
-    tags: ["Digital Logic", "Comparators", "Flip-Flops"],
-  },
-  {
-    title: "Pharmacy Management System",
-    description: "A pharmacy management application written in C#. Details coming soon.",
-    category: "software",
-    repo: "https://github.com/Musfiq53062/Pharmacy_Management_System_CSharp",
-    tags: ["C#"],
-  },
-  {
-    title: "Web Technologies — Spring 25-26",
-    description: "Coursework repository for the Web Technologies course.",
-    category: "coursework",
-    repo: "https://github.com/Musfiq53062/WTechSpring_25-26",
-    note: "Coursework",
-  },
-  {
-    title: ".NET Labs",
-    description: "Lab exercises and coursework for .NET.",
-    category: "coursework",
-    repo: "https://github.com/Musfiq53062/dotnet_lab",
-    tags: [".NET"],
-    note: "Coursework",
-  },
-  {
-    title: "Data Communication Lab Reports",
-    description: "Lab reports from the Data Communication course.",
-    category: "coursework",
-    repo: "https://github.com/Musfiq53062/DATA-COM-LAB-REPORTS",
-    note: "Coursework",
-  },
-];
+export const projects: Project[] = projectData;
 
 export type ResearchStatus = "Draft" | "Ongoing" | "Preprint" | "Published";
 export type ResearchKind = "Publication" | "Ongoing Research" | "Conference Presentation";
